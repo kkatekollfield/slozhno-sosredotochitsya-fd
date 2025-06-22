@@ -6,9 +6,17 @@
   box-sizing: border-box;
 }
 
+/*  добавила сама html 
+
+html {
+  inline-size: 100%;
+}*/
+
 body {
   min-inline-size: 375px;
   max-inline-size: 1440px;
+  min-block-size: 668px;
+  max-block-size: 1024px;
   margin: 0 auto;
 }
 
