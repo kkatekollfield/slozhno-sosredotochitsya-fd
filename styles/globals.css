@@ -48,3 +48,14 @@ a {
   font-size: inherit;
   line-height: inherit;
 }
+
+button {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+}
+
+button:focus {
+  outline: none;
+}
+

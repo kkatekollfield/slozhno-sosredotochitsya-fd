@@ -5,6 +5,18 @@
 
 :root {
   --bg-color: rgba(0, 0, 40, 1);
-  --main-font: 'IBM Plex mono';
+
+  --main-font: 'IBM Plex mono', sans-serif;
+  --font-weight-main: 400;
+  --font-weight-accent: 700;
   --body-font-size: 18px;
+  --line-height: 23.4px;
+
+  --indent: 10px;
+
+  --main-text-color: rgba(241, 178, 206, 1);
+  --decor-heading-color: rgba(219, 0, 255, 1);
+  --block-heading-color: rgba(0, 0, 40, 1);
+  --accent-color: rgba(255, 0, 112, 1);
+  
 }
