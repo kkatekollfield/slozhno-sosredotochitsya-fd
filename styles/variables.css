@@ -14,10 +14,13 @@
   --line-height: 23.4px;
 
   --indent: 10px;
+  --grid-container-margin-top: 50px;
+  /* --grid-container-margin-bottom: 10px; */
 
   --main-text-color: rgba(241, 178, 206, 1);
   --decor-heading-color: rgba(219, 0, 255, 1);
   --block-heading-color: rgba(0, 0, 40, 1);
   --accent-color: rgba(255, 0, 112, 1);
+  --focus-color: rgba(255, 0, 112, 0.4);
   
 }
