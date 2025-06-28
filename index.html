@@ -164,16 +164,38 @@
             </article>
           </div>
         </section>
-      <section class="grid-container grid-container-gallery">
+      <section class="gallery">
             <h3 class="article__title title-decor">
               А можно в картинках?
             </h3>
-          <img src="../images/sunset.png" alt="Закат в горах" class="gallery__image" loading="lazy">
-          <img src="../images/ice-cream.png" alt="Шарики мороженного с веселыми мордочками в тарелке" class="gallery__image" loading="lazy">
-          <img src="../images/tape.png" alt="Касета на которую наведен курсор мышки" class="gallery__image" loading="lazy">
-          <img src="../images/books.png" alt="Стопка книг с чашкой в блюдце сверху" class="gallery__image" loading="lazy">
-          <img src="../images/street.png" alt="Пустая улица в Японии с домами по бокам" class="gallery__image" loading="lazy">
-      </section>
+          <div class="grid-container-gallery">
+          <picture>
+            <source srcset="../images/sunset.webp" media="(max-width: 768px)" type="image/webp">
+            <source srcset="../images/sunset.png">
+            <img src="../images/sunset.png" alt="Закат в горах" class="gallery__image" loading="lazy">
+          </picture>
+          <picture>
+            <source srcset="../images/ice-cream.webp" media="(max-width: 768px)" type="image/webp">
+            <source srcset="../images/ice-cream.png">
+            <img src="../images/ice-cream.png" alt="Шарики мороженного с веселыми мордочками в тарелке" class="gallery__image" loading="lazy">
+          </picture>
+          <picture>
+            <source srcset="../images/tape.webp" media="(max-width: 768px)" type="image/webp">
+            <source srcset="../images/tape.png">
+            <img src="../images/tape.png" alt="Касета на которую наведен курсор мышки" class="gallery__image" loading="lazy">
+          </picture>
+          <picture>
+            <source srcset="../images/books.webp" media="(max-width: 768px)" type="image/webp">
+            <source srcset="../images/books.png">
+            <img src="../images/books.png" alt="Стопка книг с чашкой в блюдце сверху" class="gallery__image" loading="lazy">
+          </picture>
+          <picture>
+            <source srcset="../images/street.webp" media="(max-width: 768px)" type="image/webp">
+            <source srcset="../images/street.png">
+            <img src="../images/street.png" alt="Пустая улица в Японии с домами по бокам" class="gallery__image" loading="lazy">
+          </picture>
+          </div>
+        </section>
     </main>
     <footer class="footer decorated-zone">
       <div>
