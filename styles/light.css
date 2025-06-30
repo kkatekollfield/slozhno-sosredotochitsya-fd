@@ -120,10 +120,6 @@
   display: none;
 }
 
-.theme-auto .grid-container__title {
-  color: var(--block-heading-color, rgba(53, 52, 48, 1));
-}
-
 .theme-auto .header__theme-menu-button {
   color: var(--main-text-color, rgba(53, 52, 48, 1));
 }
