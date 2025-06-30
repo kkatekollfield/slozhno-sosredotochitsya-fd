@@ -305,11 +305,6 @@ main section:last-child {
 }
 
 @media (width >= 1024px) {
-  :root {
-    --indent: 20px;
-    --grid-container-margin-top: 80px;
-  }
-
   .header {
   padding-inline-start: 0;
   }
@@ -334,7 +329,7 @@ main section:last-child {
   }
 
   .grid-container:nth-child(odd) {
-  gap: 20px;
+    gap: 20px;
   }
 
   .grid-container:nth-child(even) .grid-subcontainer {
