@@ -59,18 +59,18 @@
   color: var(--main-text-color, rgba(53, 52, 48, 1));
 }
 
-.theme-light .header__theme-menu-button:hover {
-  border-inline: 1px solid var(--hover-color, rgba(50, 49, 45, 0.4));
-  border-block: 1px solid var(--hover-color, rgba(50, 49, 45, 0.4));
+.theme-light .header__theme-menu-button_active {
+  border-inline: 1px solid var(--main-text-color, rgba(53, 52, 48, 1));
+  border-block: 1px solid var(--main-text-color, rgba(53, 52, 48, 1));
 }
 
 .theme-light .header__theme-menu-button:focus-visible {
   border-block-end: 1px solid var(--main-text-color, rgba(53, 52, 48, 1));
 }
 
-.theme-light .header__theme-menu-button_active {
-  border-inline: 1px solid var(--main-text-color, rgba(53, 52, 48, 1));
-  border-block: 1px solid var(--main-text-color, rgba(53, 52, 48, 1));
+.theme-light .header__theme-menu-button:hover {
+  border-inline: 1px solid var(--hover-color, rgba(50, 49, 45, 0.4));
+  border-block: 1px solid var(--hover-color, rgba(50, 49, 45, 0.4));
 }
 
 .theme-light .grid-container__title {
@@ -96,7 +96,8 @@
     --grid-container-margin-top: 80px;
   }
 }
-  :root {
+
+  :root.theme-auto {
   --bg-color: rgba(255, 241, 247, 1);
   --bg-image: url(../images/cover-image-light.png);
 

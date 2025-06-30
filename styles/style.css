@@ -92,6 +92,12 @@
   cursor: pointer;
 }
 
+.header__theme-menu-button_active {
+  border-inline: 1px solid var(--accent-color, rgba(255, 0, 112, 1));
+  border-block: 1px solid var(--accent-color, rgba(255, 0, 112, 1));
+  pointer-events: none;
+}
+
 .header__theme-menu-button:hover {
   border-inline: 1px solid var(--hover-color, rgba(255, 0, 112, 0.4));
   border-block: 1px solid var(--hover-color, rgba(255, 0, 112, 0.4));
@@ -99,12 +105,6 @@
 
 .header__theme-menu-button:focus-visible {
   border-block-end: 1px solid var(--accent-color, rgba(255, 0, 112, 1));
-}
-
-.header__theme-menu-button_active {
-  border-inline: 1px solid var(--accent-color, rgba(255, 0, 112, 1));
-  border-block: 1px solid var(--accent-color, rgba(255, 0, 112, 1));
-  pointer-events: none;
 }
 
 .title {
