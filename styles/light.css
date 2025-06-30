@@ -29,6 +29,20 @@
   --hover-color: rgba(50, 49, 45, 0.4);
 }
 
+  @media (width >= 768px) {
+  :root.theme-light {
+    --indent: 20px;
+    --grid-container-margin-top: 80px;
+  }
+}
+
+  @media (width >= 1024px) {
+  :root.theme-light {
+    --indent: 20px;
+    --grid-container-margin-top: 80px;
+  }
+}
+
 .theme-light .page {
   /* Вам также нужно будет написать ряд подобных селекторов */
   background-color: var(--bg-color, rgba(255, 241, 247, 1));
@@ -53,10 +67,10 @@
   display: none;
 }
 
-.theme-light .header__theme-menu-button_type_dark {
+/* .theme-light .header__theme-menu-button_type_dark {
   border-block: 1px solid transparent;
   border-inline: 1px solid transparent;
-}
+} */
 
 .theme-light .header__theme-menu-button {
   color: var(--main-text-color, rgba(53, 52, 48, 1));
@@ -71,7 +85,7 @@
   border-block-end: 1px solid var(--main-text-color, rgba(53, 52, 48, 1));
 }
 
-.theme-light .header__theme-menu-button_type_light {
+.theme-light .header__theme-menu-button_active {
   border-block: 1px solid var(--main-text-color, rgba(53, 52, 48, 1));
   border-inline: 1px solid var(--main-text-color, rgba(53, 52, 48, 1));
 }
@@ -105,5 +119,63 @@
   --block-heading-color: rgba(53, 52, 48, 1);
   --accent-color: rgba(255, 141, 203, 1);
   --hover-color: rgba(50, 49, 45, 0.4);
+  }
+
+    @media (width >= 768px) {
+  :root.theme-auto {
+    --indent: 20px;
+    --grid-container-margin-top: 80px;
+  }
+}
+
+  @media (width >= 1024px) {
+  :root.theme-auto {
+    --indent: 20px;
+    --grid-container-margin-top: 80px;
+  }
+}
+
+  .theme-auto .header__label::before {
+  display: none;
+  }
+
+  .theme-auto .header__label::after {
+  display: none;
+  }
+
+  .theme-auto .decorated-zone::before {
+  border-inline-start: 1px solid var(--main-text-color, rgba(53, 52, 48, 1));
+  border-block-end: 1px solid var(--main-text-color, rgba(53, 52, 48, 1));
+  }
+
+  .theme-auto .decorated-zone::after {
+  border-inline-end: 1px solid var(--main-text-color, rgba(53, 52, 48, 1));
+  border-block-start: 1px solid var(--main-text-color, rgba(53, 52, 48, 1));
+  }
+
+  .theme-auto .header__theme-menu-button {
+  color: var(--main-text-color, rgba(53, 52, 48, 1));
+  }
+
+  .theme-auto .header__theme-menu-button:hover {
+  border-block: 1px solid var(--hover-color, rgba(50, 49, 45, 0.4));
+  border-inline: 1px solid var(--hover-color, rgba(50, 49, 45, 0.4));
+  }
+
+  .theme-auto .header__theme-menu-button:focus-visible {
+  border-block-end: 1px solid var(--main-text-color, rgba(53, 52, 48, 1));
+  }
+
+  .theme-auto .header__theme-menu-button_active {
+  border-block: 1px solid var(--main-text-color, rgba(53, 52, 48, 1));
+  border-inline: 1px solid var(--main-text-color, rgba(53, 52, 48, 1));
+  }
+
+  .theme-auto .grid-container__title {
+  color: var(--block-heading-color, rgba(53, 52, 48, 1));
+  }
+
+  .theme-auto .article__title {
+  color: var(--block-heading-color, rgba(53, 52, 48, 1));
   }
 }

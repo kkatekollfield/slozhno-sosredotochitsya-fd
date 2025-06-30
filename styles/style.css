@@ -91,7 +91,8 @@
 .header__theme-menu-list {
   display: grid;
   justify-content: center;
-  gap: var(--indent, 10px);
+  gap: 10px;
+  line-height: 100%;
 }
 
 .header__theme-menu-item {
@@ -103,11 +104,11 @@
   text-transform: lowercase;
   border-block: 1px solid transparent;
   border-inline: 1px solid transparent;
-  padding-block-end: 3.4px;
-  padding-block-start: 0.6px;
+  padding-block-end: 5px;
+  padding-block-start: 2x;
   padding-inline-start: 13px;
   padding-inline-end: 13px;
-  line-height: 100%;
+  /* line-height: 100%; */
   font-family: inherit;
   font-size: inherit;
   cursor: pointer;
@@ -122,12 +123,9 @@
   border-block-end: 1px solid var(--accent-color, rgba(255, 0, 112, 1));
 }
 
-.header__theme-menu-button_type_dark {
+.header__theme-menu-button_active {
   border-block: 1px solid var(--accent-color, rgba(255, 0, 112, 1));
   border-inline: 1px solid var(--accent-color, rgba(255, 0, 112, 1));
-}
-
-.header__theme-menu-button_active {
   pointer-events: none;
 }
 
@@ -228,7 +226,7 @@ main section:last-child {
   text-decoration: underline;
 }
 
-.link:focus {
+.link:focus-visible {
   border-block: 1px solid var(--main-text-color, rgba(241, 178, 206, 1));
   border-inline: 1px solid var(--main-text-color, rgba(241, 178, 206, 1));
 }
@@ -242,7 +240,6 @@ main section:last-child {
 .grid-container-gallery {
   display: grid;
   gap: var(--indent, 10px);
-  /* grid-template-rows: 142px 355px 237px 355px 237px; */
   box-sizing: border-box;
 }
 
@@ -299,8 +296,13 @@ main section:last-child {
   padding-inline-start: 0;
   }
 
+  .title {
+  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  }
+
   .grid-container:nth-child(odd) {
   grid-template-columns: 1fr 2fr;
+  gap: 40px;
   /* grid-template-rows: repeat(3, minmax(min-content, max-content)); */
   }
 
@@ -341,6 +343,10 @@ main section:last-child {
   grid-row: span 2;
   grid-column: span 2;
   }
+
+  .footer__title {
+  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+}
 }
 
 @media (width >= 1024px) {
@@ -360,10 +366,24 @@ main section:last-child {
 
   .header__theme-menu-list {
   grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  padding-inline-start: 20px;
   }
 
   .header__text {
   max-inline-size: 491px;
+  }
+
+  .grid-container:nth-child(even) {
+    row-gap: 0;
+  }
+
+  .grid-container:nth-child(odd) {
+  gap: 20px;
+  }
+
+  .grid-container:nth-child(even) .grid-subcontainer {
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .grid-container:nth-child(even) .grid-subcontainer article {
