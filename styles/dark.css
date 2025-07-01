@@ -1,26 +1,15 @@
 :root.theme-dark {
   --bg-color: rgba(0, 0, 40, 1);
   --bg-image: url(../images/cover-image-dark.png);
-
-  --main-font: 'IBM Plex mono', sans-serif;
-  --font-weight-main: 400;
-  --font-weight-accent: 700;
-  --body-font-size: 18px;
-  --line-height: 23.4px;
-
-  --indent: 10px;
-  --grid-container-margin-top: 50px;
-
-  --main-text-color: rgba(241, 178, 206, 1);
+  --decorated-zone-color: rgba(255, 0, 112, 1);
+  --button-color: rgba(255, 0, 112, 1);
   --decor-heading-color: rgba(219, 0, 255, 1);
+  --grid-heading-color: rgba(255, 0, 112, 1);
   --block-heading-color: rgba(0, 0, 40, 1);
+  --main-text-color: rgba(241, 178, 206, 1);
   --accent-color: rgba(255, 0, 112, 1);
+  --focus-color: rgba(255, 0, 112, 1);
   --hover-color: rgba(255, 0, 112, 0.4);
-}
-
-.theme-dark .page {
-  background-color: var(--bg-color, rgba(0, 0, 40, 1));
-  background-image: var(--bg-image, url(../images/cover-image.png));
 }
 
   @media (width >= 768px) {

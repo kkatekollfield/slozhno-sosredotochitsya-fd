@@ -1,20 +1,14 @@
 :root.theme-light {
   --bg-color: rgba(255, 241, 247, 1);
   --bg-image: url(../images/cover-image-light.png);
-
-  --main-font: 'IBM Plex mono', sans-serif;
-  --font-weight-main: 400;
-  --font-weight-accent: 700;
-  --body-font-size: 18px;
-  --line-height: 23.4px;
-
-  --indent: 10px;
-  --grid-container-margin-top: 50px;
-
-  --main-text-color: rgba(53, 52, 48, 1);
+  --decorated-zone-color: rgba(53, 52, 48, 1);
+  --button-color: rgba(53, 52, 48, 1);
   --decor-heading-color: rgba(255, 194, 230, 1);
+  --grid-heading-color: rgba(53, 52, 48, 1);
   --block-heading-color: rgba(53, 52, 48, 1);
+  --main-text-color: rgba(53, 52, 48, 1);
   --accent-color: rgba(255, 141, 203, 1);
+  --focus-color: rgba(53, 52, 48, 1);
   --hover-color: rgba(50, 49, 45, 0.4);
 }
 
@@ -32,53 +26,12 @@
   }
 }
 
-.theme-light .page {
-  background-color: var(--bg-color, rgba(255, 241, 247, 1));
-  background-image: var(--bg-image, url(../images/cover-image.png));
-}
-
-.theme-light .decorated-zone::before {
-  border-inline-start: 1px solid var(--main-text-color, rgba(53, 52, 48, 1));
-  border-block-end: 1px solid var(--main-text-color, rgba(53, 52, 48, 1));
-}
-
-.theme-light .decorated-zone::after {
-  border-inline-end: 1px solid var(--main-text-color, rgba(53, 52, 48, 1));
-  border-block-start: 1px solid var(--main-text-color, rgba(53, 52, 48, 1));
-}
-
 .theme-light .header__label::before {
   display: none;
 }
 
 .theme-light .header__label::after {
   display: none;
-}
-
-.theme-light .header__theme-menu-button {
-  color: var(--main-text-color, rgba(53, 52, 48, 1));
-}
-
-.theme-light .header__theme-menu-button_active {
-  border-inline: 1px solid var(--main-text-color, rgba(53, 52, 48, 1));
-  border-block: 1px solid var(--main-text-color, rgba(53, 52, 48, 1));
-}
-
-.theme-light .header__theme-menu-button:focus-visible {
-  border-block-end: 1px solid var(--main-text-color, rgba(53, 52, 48, 1));
-}
-
-.theme-light .header__theme-menu-button:hover {
-  border-inline: 1px solid var(--hover-color, rgba(50, 49, 45, 0.4));
-  border-block: 1px solid var(--hover-color, rgba(50, 49, 45, 0.4));
-}
-
-.theme-light .grid-container__title {
-  color: var(--block-heading-color, rgba(53, 52, 48, 1));
-}
-
-.theme-light .article__title {
-  color: var(--block-heading-color, rgba(53, 52, 48, 1));
 }
 
 @media (prefers-color-scheme: light) {
@@ -95,22 +48,16 @@
   --indent: 10px;
   --grid-container-margin-top: 50px;
 
-  --main-text-color: rgba(53, 52, 48, 1);
+  --decorated-zone-color: rgba(53, 52, 48, 1);
+  --button-color: rgba(53, 52, 48, 1);
   --decor-heading-color: rgba(255, 194, 230, 1);
+  --grid-heading-color: rgba(53, 52, 48, 1);
   --block-heading-color: rgba(53, 52, 48, 1);
+  --main-text-color: rgba(53, 52, 48, 1);
   --accent-color: rgba(255, 141, 203, 1);
+  --focus-color: rgba(53, 52, 48, 1);
   --hover-color: rgba(50, 49, 45, 0.4);
   }
-
-.theme-auto .decorated-zone::before {
-  border-inline-start: 1px solid var(--main-text-color, rgba(53, 52, 48, 1));
-  border-block-end: 1px solid var(--main-text-color, rgba(53, 52, 48, 1));
-}
-
-.theme-auto .decorated-zone::after {
-  border-inline-end: 1px solid var(--main-text-color, rgba(53, 52, 48, 1));
-  border-block-start: 1px solid var(--main-text-color, rgba(53, 52, 48, 1));
-}
 
 .theme-auto .header__label::before {
   display: none;
@@ -118,32 +65,6 @@
 
 .theme-auto .header__label::after {
   display: none;
-}
-
-.theme-auto .header__theme-menu-button {
-  color: var(--main-text-color, rgba(53, 52, 48, 1));
-}
-
-.theme-auto .header__theme-menu-button_active {
-  border-inline: 1px solid var(--main-text-color, rgba(53, 52, 48, 1));
-  border-block: 1px solid var(--main-text-color, rgba(53, 52, 48, 1));
-}
-
-.theme-auto .header__theme-menu-button:focus-visible {
-  border-block-end: 1px solid var(--main-text-color, rgba(53, 52, 48, 1));
-}
-
-.theme-auto .header__theme-menu-button:hover {
-  border-inline: 1px solid var(--hover-color, rgba(50, 49, 45, 0.4));
-  border-block: 1px solid var(--hover-color, rgba(50, 49, 45, 0.4));
-}
-
-.theme-auto .grid-container__title {
-  color: var(--block-heading-color, rgba(53, 52, 48, 1));
-}
-
-.theme-auto .article__title {
-  color: var(--block-heading-color, rgba(53, 52, 48, 1));
 }
 
 @media (width >= 768px) {
