@@ -35,14 +35,6 @@
 }
 
 @media (prefers-color-scheme: light) {
-
-  @media (width >=768px) {
-    :root {
-      --indent: 20px;
-      --grid-container-margin-top: 80px;
-    }
-  }
-
   :root {
     --bg-color: rgba(255, 241, 247, 1);
     --bg-image: url(../images/cover-image-light.png);
@@ -73,5 +65,12 @@
 
   .theme-auto .header__label::after {
     display: none;
+  }
+
+  @media (width >=768px) {
+    :root {
+      --indent: 20px;
+      --grid-container-margin-top: 80px;
+    }
   }
 }

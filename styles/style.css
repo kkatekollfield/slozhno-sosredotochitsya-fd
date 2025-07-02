@@ -271,8 +271,6 @@ main section:last-child {
 
   .grid-container_under-content {
     grid-template-columns: repeat(3, 1fr);
-    grid-template-columns: repeat(auto-fill, 300px);
-    grid-template-rows: 2fr;
   }
 
   .grid-container_under-content .grid-subcontainer {
