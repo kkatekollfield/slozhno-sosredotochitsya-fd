@@ -38,16 +38,6 @@
   :root {
     --bg-color: rgba(255, 241, 247, 1);
     --bg-image: url(../images/cover-image-light.png);
-
-    --main-font: 'IBM Plex mono', sans-serif;
-    --font-weight-main: 400;
-    --font-weight-accent: 700;
-    --body-font-size: 18px;
-    --line-height: 23.4px;
-
-    --indent: 10px;
-    --grid-container-margin-top: 50px;
-
     --decorated-zone-color: rgba(53, 52, 48, 1);
     --button-color: rgba(53, 52, 48, 1);
     --decor-heading-color: rgba(255, 194, 230, 1);
